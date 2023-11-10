@@ -1,0 +1,21 @@
+{
+    "manifest_version":2,
+    "version":"1.0",
+    "name":"Test",
+    "content_scripts":[
+     {
+      "matches":["https://www.youtube.com/*"],
+      "js":["main.js"]
+     }
+    ],
+    "web_accessible_resources": [
+          "pp.jpg"
+    ],
+    
+    "browser_action":{
+        "default_icon":{
+          "19":"icon.jpg",
+          "38":"icon.jpg"
+        }
+    }
+  }
